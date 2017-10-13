@@ -5,4 +5,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface DogRepository extends CrudRepository<Dog, String>{
+
+	Dog findAllDogsByNameStartingWith(String start);
 }

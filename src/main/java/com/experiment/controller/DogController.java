@@ -16,7 +16,7 @@ public class DogController {
 	private DogRepository dogRepository;
 
 	@PostMapping("/dog")
-	public Dog createDog(@RequestBody Dog dog) {
+	public Dog createDog(@RequestBody Dog dog) { //Monos hier
 		return dogRepository.save(dog);
 	}
 }
